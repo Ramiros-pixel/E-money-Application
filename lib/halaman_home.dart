@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('E-Money'),
-        backgroundColor: const Color.fromARGB(255, 0, 255, 60),
+        backgroundColor: const Color.fromARGB(255, 15, 159, 2),
       ),
       body: Center(
         child: Column(
@@ -72,7 +72,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.grey.withOpacity(0.5),
                     spreadRadius: 2,
                     blurRadius: 5,
-                    offset: Offset(0, 3), // changes position of shadow
+                    offset: Offset(0, 3), 
                   ),
                 ],
               ),
@@ -110,7 +110,7 @@ class HomePage extends StatelessWidget {
             //ini bagian 2
             Container(
               padding: EdgeInsets.all(16), //icon dan button
-              margin: EdgeInsets.all(10), //ini jarak dari tepi layar
+              margin: EdgeInsets.all(10), //jarak dari tepi layar
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(8),
@@ -147,6 +147,7 @@ class HomePage extends StatelessWidget {
                           'Add a new item to the list',
                           style: TextStyle(fontSize: 16, color: Colors.grey),
                         ),
+                        
                       ],
                     ),
                   ),
