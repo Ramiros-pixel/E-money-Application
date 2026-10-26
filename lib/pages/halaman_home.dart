@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
 
-import 'halaman_menu.dart';
-
+import 'halaman_maps.dart';
+// BAGAS RAMIRO SAPUTRA
+// 152024081
 class HomePage extends StatelessWidget {
   const new({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('E-Money'),
-        backgroundColor: const Color.fromARGB(255, 15, 159, 2),
-      ),
       body: Center(
         child: Column(
           children: [
@@ -72,7 +69,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.grey.withOpacity(0.5),
                     spreadRadius: 2,
                     blurRadius: 5,
-                    offset: Offset(0, 3), 
+                    offset: Offset(0, 3),
                   ),
                 ],
               ),
@@ -147,22 +144,21 @@ class HomePage extends StatelessWidget {
                           'Add a new item to the list',
                           style: TextStyle(fontSize: 16, color: Colors.grey),
                         ),
-                        
                       ],
                     ),
                   ),
                 ],
               ),
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const MenuPage()),
-                );
-              },
-              child: Text('Go to Menu Page'),
-            ),
+            // ElevatedButton(
+            //   onPressed: () {
+            //     Navigator.push(
+            //       context,
+            //       MaterialPageRoute(builder: (context) => const MenuPage()),
+            //     );
+            //   },
+            //   child: Text('Go to Menu Page'),
+            // ),
           ],
         ),
       ),
